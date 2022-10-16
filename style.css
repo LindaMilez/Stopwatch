@@ -1,0 +1,37 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(
+    to right,
+    rgb(108, 137, 108),
+    rgb(77, 154, 77),
+    rgb(1, 142, 1)
+  );
+}
+.container {
+  margin: 100px auto;
+  text-align: center;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+p {
+  font-size: 30px;
+  color: white;
+}
+button {
+  margin: 10px;
+  border: none;
+  padding: 18px 10px;
+  font-size: 20px;
+  width: 180px;
+}
+button:hover {
+  border: none;
+  cursor: pointer;
+  background-color: aquamarine;
+  color: whitesmoke;
+  transition: 0.5s;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 30px;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+      .brown {
+        background-color: brown;
+      }
+      .green {
+        background-color: green;
+      }
+    </style>
+    <title>Remove Color</title>
+  </head>
+  <body>
+    <h2>Dropdown</h2>
+    <hr />
+    <form>
+      <select id="dropDown">
+        <option value="">-- Select Color --</option>
+        <option class="blue" name="colors">Blue</option>
+        <option class="red" name="colors">Red</option>
+        <option class="brown" name="colors">Brown</option>
+        <option class="green" name="colors">Green</option>
+      </select>
+      <input type="button" onclick="removecolor()" value="Remove Selected" />
+    </form>
+    <script>
+      function removecolor() {
+        var x = document.getElementById("dropDown");
+        x.remove(x.selectedIndex);
+      }
+    </script>
+  </body>
+</html>
